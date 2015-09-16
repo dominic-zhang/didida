@@ -7,28 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E0E27D281BA7F243003DEE3F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E27D271BA7F243003DEE3F /* main.swift */; };
+		E0E27DC11BA8E706003DEE3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E27DC01BA8E706003DEE3F /* AppDelegate.swift */; };
+		E0E27DC31BA8E706003DEE3F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E27DC21BA8E706003DEE3F /* Images.xcassets */; };
+		E0E27DC61BA8E706003DEE3F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E27DC41BA8E706003DEE3F /* MainMenu.xib */; };
+		E0E27DD21BA8E706003DEE3F /* PrimeFactorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E27DD11BA8E706003DEE3F /* PrimeFactorsTests.swift */; };
+		E0E27DDC1BA8E7F4003DEE3F /* PrimeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E27DDB1BA8E7F4003DEE3F /* PrimeFactors.swift */; };
+		E0E27DDD1BA8E7F4003DEE3F /* PrimeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E27DDB1BA8E7F4003DEE3F /* PrimeFactors.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		E0E27D221BA7F243003DEE3F /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
+/* Begin PBXContainerItemProxy section */
+		E0E27DCC1BA8E706003DEE3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0E27DB31BA8E706003DEE3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0E27DBA1BA8E706003DEE3F;
+			remoteInfo = PrimeFactors;
 		};
-/* End PBXCopyFilesBuildPhase section */
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E0E27D241BA7F243003DEE3F /* PrimeFactors */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrimeFactors; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0E27D271BA7F243003DEE3F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E0E27DBB1BA8E706003DEE3F /* PrimeFactors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeFactors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E27DBF1BA8E706003DEE3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E27DC01BA8E706003DEE3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0E27DC21BA8E706003DEE3F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E0E27DC51BA8E706003DEE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E0E27DCB1BA8E706003DEE3F /* PrimeFactorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeFactorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E27DD01BA8E706003DEE3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E27DD11BA8E706003DEE3F /* PrimeFactorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsTests.swift; sourceTree = "<group>"; };
+		E0E27DDB1BA8E7F4003DEE3F /* PrimeFactors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeFactors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E0E27D211BA7F243003DEE3F /* Frameworks */ = {
+		E0E27DB81BA8E706003DEE3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E27DC81BA8E706003DEE3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,40 +55,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E0E27D1B1BA7F243003DEE3F = {
+		E0E27DB21BA8E706003DEE3F = {
 			isa = PBXGroup;
 			children = (
-				E0E27D261BA7F243003DEE3F /* PrimeFactors */,
-				E0E27D251BA7F243003DEE3F /* Products */,
+				E0E27DBD1BA8E706003DEE3F /* PrimeFactors */,
+				E0E27DCE1BA8E706003DEE3F /* PrimeFactorsTests */,
+				E0E27DBC1BA8E706003DEE3F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E0E27D251BA7F243003DEE3F /* Products */ = {
+		E0E27DBC1BA8E706003DEE3F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E0E27D241BA7F243003DEE3F /* PrimeFactors */,
+				E0E27DBB1BA8E706003DEE3F /* PrimeFactors.app */,
+				E0E27DCB1BA8E706003DEE3F /* PrimeFactorsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E0E27D261BA7F243003DEE3F /* PrimeFactors */ = {
+		E0E27DBD1BA8E706003DEE3F /* PrimeFactors */ = {
 			isa = PBXGroup;
 			children = (
-				E0E27D271BA7F243003DEE3F /* main.swift */,
+				E0E27DC01BA8E706003DEE3F /* AppDelegate.swift */,
+				E0E27DC21BA8E706003DEE3F /* Images.xcassets */,
+				E0E27DC41BA8E706003DEE3F /* MainMenu.xib */,
+				E0E27DBE1BA8E706003DEE3F /* Supporting Files */,
+				E0E27DDB1BA8E7F4003DEE3F /* PrimeFactors.swift */,
 			);
 			path = PrimeFactors;
+			sourceTree = "<group>";
+		};
+		E0E27DBE1BA8E706003DEE3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0E27DBF1BA8E706003DEE3F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0E27DCE1BA8E706003DEE3F /* PrimeFactorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0E27DD11BA8E706003DEE3F /* PrimeFactorsTests.swift */,
+				E0E27DCF1BA8E706003DEE3F /* Supporting Files */,
+			);
+			path = PrimeFactorsTests;
+			sourceTree = "<group>";
+		};
+		E0E27DCF1BA8E706003DEE3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0E27DD01BA8E706003DEE3F /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E0E27D231BA7F243003DEE3F /* PrimeFactors */ = {
+		E0E27DBA1BA8E706003DEE3F /* PrimeFactors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0E27D2B1BA7F243003DEE3F /* Build configuration list for PBXNativeTarget "PrimeFactors" */;
+			buildConfigurationList = E0E27DD51BA8E706003DEE3F /* Build configuration list for PBXNativeTarget "PrimeFactors" */;
 			buildPhases = (
-				E0E27D201BA7F243003DEE3F /* Sources */,
-				E0E27D211BA7F243003DEE3F /* Frameworks */,
-				E0E27D221BA7F243003DEE3F /* CopyFiles */,
+				E0E27DB71BA8E706003DEE3F /* Sources */,
+				E0E27DB81BA8E706003DEE3F /* Frameworks */,
+				E0E27DB91BA8E706003DEE3F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -79,53 +127,125 @@
 			);
 			name = PrimeFactors;
 			productName = PrimeFactors;
-			productReference = E0E27D241BA7F243003DEE3F /* PrimeFactors */;
-			productType = "com.apple.product-type.tool";
+			productReference = E0E27DBB1BA8E706003DEE3F /* PrimeFactors.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0E27DCA1BA8E706003DEE3F /* PrimeFactorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E27DD81BA8E706003DEE3F /* Build configuration list for PBXNativeTarget "PrimeFactorsTests" */;
+			buildPhases = (
+				E0E27DC71BA8E706003DEE3F /* Sources */,
+				E0E27DC81BA8E706003DEE3F /* Frameworks */,
+				E0E27DC91BA8E706003DEE3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0E27DCD1BA8E706003DEE3F /* PBXTargetDependency */,
+			);
+			name = PrimeFactorsTests;
+			productName = PrimeFactorsTests;
+			productReference = E0E27DCB1BA8E706003DEE3F /* PrimeFactorsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E0E27D1C1BA7F243003DEE3F /* Project object */ = {
+		E0E27DB31BA8E706003DEE3F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Dominic Zhang";
 				TargetAttributes = {
-					E0E27D231BA7F243003DEE3F = {
+					E0E27DBA1BA8E706003DEE3F = {
 						CreatedOnToolsVersion = 6.4;
+					};
+					E0E27DCA1BA8E706003DEE3F = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E0E27DBA1BA8E706003DEE3F;
 					};
 				};
 			};
-			buildConfigurationList = E0E27D1F1BA7F243003DEE3F /* Build configuration list for PBXProject "PrimeFactors" */;
+			buildConfigurationList = E0E27DB61BA8E706003DEE3F /* Build configuration list for PBXProject "PrimeFactors" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = E0E27D1B1BA7F243003DEE3F;
-			productRefGroup = E0E27D251BA7F243003DEE3F /* Products */;
+			mainGroup = E0E27DB21BA8E706003DEE3F;
+			productRefGroup = E0E27DBC1BA8E706003DEE3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E0E27D231BA7F243003DEE3F /* PrimeFactors */,
+				E0E27DBA1BA8E706003DEE3F /* PrimeFactors */,
+				E0E27DCA1BA8E706003DEE3F /* PrimeFactorsTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E0E27DB91BA8E706003DEE3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E27DC31BA8E706003DEE3F /* Images.xcassets in Resources */,
+				E0E27DC61BA8E706003DEE3F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E27DC91BA8E706003DEE3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		E0E27D201BA7F243003DEE3F /* Sources */ = {
+		E0E27DB71BA8E706003DEE3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0E27D281BA7F243003DEE3F /* main.swift in Sources */,
+				E0E27DDC1BA8E7F4003DEE3F /* PrimeFactors.swift in Sources */,
+				E0E27DC11BA8E706003DEE3F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E27DC71BA8E706003DEE3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E27DDD1BA8E7F4003DEE3F /* PrimeFactors.swift in Sources */,
+				E0E27DD21BA8E706003DEE3F /* PrimeFactorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E0E27DCD1BA8E706003DEE3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0E27DBA1BA8E706003DEE3F /* PrimeFactors */;
+			targetProxy = E0E27DCC1BA8E706003DEE3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0E27DC41BA8E706003DEE3F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0E27DC51BA8E706003DEE3F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		E0E27D291BA7F243003DEE3F /* Debug */ = {
+		E0E27DD31BA8E706003DEE3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -142,6 +262,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -168,7 +289,7 @@
 			};
 			name = Debug;
 		};
-		E0E27D2A1BA7F243003DEE3F /* Release */ = {
+		E0E27DD41BA8E706003DEE3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -185,6 +306,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -203,41 +325,95 @@
 			};
 			name = Release;
 		};
-		E0E27D2C1BA7F243003DEE3F /* Debug */ = {
+		E0E27DD61BA8E706003DEE3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PrimeFactors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		E0E27D2D1BA7F243003DEE3F /* Release */ = {
+		E0E27DD71BA8E706003DEE3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PrimeFactors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E0E27DD91BA8E706003DEE3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrimeFactorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrimeFactors.app/Contents/MacOS/PrimeFactors";
+			};
+			name = Debug;
+		};
+		E0E27DDA1BA8E706003DEE3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrimeFactorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrimeFactors.app/Contents/MacOS/PrimeFactors";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E0E27D1F1BA7F243003DEE3F /* Build configuration list for PBXProject "PrimeFactors" */ = {
+		E0E27DB61BA8E706003DEE3F /* Build configuration list for PBXProject "PrimeFactors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0E27D291BA7F243003DEE3F /* Debug */,
-				E0E27D2A1BA7F243003DEE3F /* Release */,
+				E0E27DD31BA8E706003DEE3F /* Debug */,
+				E0E27DD41BA8E706003DEE3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0E27D2B1BA7F243003DEE3F /* Build configuration list for PBXNativeTarget "PrimeFactors" */ = {
+		E0E27DD51BA8E706003DEE3F /* Build configuration list for PBXNativeTarget "PrimeFactors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0E27D2C1BA7F243003DEE3F /* Debug */,
-				E0E27D2D1BA7F243003DEE3F /* Release */,
+				E0E27DD61BA8E706003DEE3F /* Debug */,
+				E0E27DD71BA8E706003DEE3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0E27DD81BA8E706003DEE3F /* Build configuration list for PBXNativeTarget "PrimeFactorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E27DD91BA8E706003DEE3F /* Debug */,
+				E0E27DDA1BA8E706003DEE3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E0E27D1C1BA7F243003DEE3F /* Project object */;
+	rootObject = E0E27DB31BA8E706003DEE3F /* Project object */;
 }

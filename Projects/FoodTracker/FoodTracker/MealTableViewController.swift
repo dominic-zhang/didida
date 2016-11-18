@@ -31,13 +31,13 @@ class MealTableViewController: UITableViewController {
 	func  loadSampleMeals() {
 
 		let photo1 = UIImage(named: "meal-1")
-		let meal1 = Meal(name: "Meal 1", photo: photo1, rating: 4);
+		let meal1 = Meal(name: "Meal 1", photo: photo1, rating: 4, comments:"good meal");
 
 		let photo2 = UIImage(named: "meal-2")
-		let meal2 = Meal(name: "Meal 2", photo: photo2, rating: 5);
+		let meal2 = Meal(name: "Meal 2", photo: photo2, rating: 5, comments:"amazing food!");
 
 		let photo3 = UIImage(named: "meal-3")
-		let meal3 = Meal(name: "Meal 3", photo: photo3, rating: 3);
+		let meal3 = Meal(name: "Meal 3", photo: photo3, rating: 3, comments:"just so so");
 
 		meals += [meal1!, meal2!, meal3!]
 	}

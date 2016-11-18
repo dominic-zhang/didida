@@ -17,6 +17,7 @@ class ViewController: UIViewController,
 	@IBOutlet weak var photoImageView: UIImageView!
 	@IBOutlet weak var ratingControl: RatingControl!
 	@IBOutlet weak var saveButton: UIBarButtonItem!
+	@IBOutlet weak var commentView: UITextView!
 
 	var meal: Meal?
 
@@ -24,6 +25,9 @@ class ViewController: UIViewController,
 		super.viewDidLoad()
 
 		nameTextField.delegate = self
+		commentView.layer.borderColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0).cgColor
+		commentView.layer.borderWidth = 1.0
+		commentView.layer.cornerRadius = 5
 
 		// Set up views if editing an existing Meal
 		if let meal = meal {
@@ -31,6 +35,7 @@ class ViewController: UIViewController,
 			nameTextField.text = meal.name
 			photoImageView.image = meal.photo
 			ratingControl.rating = meal.rating
+			commentView.text = meal.comments
 		}
 
 		checkMealName()
@@ -42,8 +47,9 @@ class ViewController: UIViewController,
 			let name = nameTextField.text ?? ""
 			let photo = photoImageView.image
 			let rating = ratingControl.rating
+			let comments = commentView.text ?? ""
 
-			meal = Meal(name: name, photo: photo, rating: rating)
+			meal = Meal(name: name, photo: photo, rating: rating, comments: comments)
 		}
 	}
 

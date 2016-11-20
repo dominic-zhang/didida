@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController,
 	UITextFieldDelegate,
 	UIImagePickerControllerDelegate,
-	UINavigationControllerDelegate {
+	UINavigationControllerDelegate,
+	UITextViewDelegate {
 
 	@IBOutlet weak var nameTextField: UITextField!
 	@IBOutlet weak var photoImageView: UIImageView!
@@ -19,12 +20,17 @@ class ViewController: UIViewController,
 	@IBOutlet weak var saveButton: UIBarButtonItem!
 	@IBOutlet weak var commentView: UITextView!
 
+	/// Used to adjust the text view's height when the keyboard hides and shows.
+	@IBOutlet weak var textViewBottomLayoutGuideConstraint: NSLayoutConstraint!
+
 	var meal: Meal?
+	var activeField: AnyObject?
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
 		nameTextField.delegate = self
+		commentView.delegate = self
 		commentView.layer.borderColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0).cgColor
 		commentView.layer.borderWidth = 1.0
 		commentView.layer.cornerRadius = 5
@@ -53,6 +59,66 @@ class ViewController: UIViewController,
 		}
 	}
 
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+
+		// Listen for changes to keyboard visibility so that we can adjust the text view accordingly.
+		let notificationCenter = NotificationCenter.default
+
+		notificationCenter.addObserver(self, selector: #selector(ViewController.handleKeyboardNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+
+		notificationCenter.addObserver(self, selector: #selector(ViewController.handleKeyboardNotification(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+	}
+
+	override func viewDidDisappear(_ animated: Bool) {
+		super.viewDidDisappear(animated)
+
+		let notificationCenter = NotificationCenter.default
+
+		notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+
+		notificationCenter.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+	}
+
+	// MARK: - Keyboard Event Notifications
+
+	func handleKeyboardNotification(_ notification: Notification) {
+		if (activeField as? UITextView != commentView!) {
+			return
+		}
+		let userInfo = notification.userInfo!
+
+		// Get information about the animation.
+		let animationDuration: TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+
+		let rawAnimationCurveValue = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).uintValue
+		let animationCurve = UIViewAnimationOptions(rawValue: rawAnimationCurveValue)
+
+		// Convert the keyboard frame from screen to view coordinates.
+		let keyboardScreenBeginFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+		let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+
+		let keyboardViewBeginFrame = view.convert(keyboardScreenBeginFrame, from: view.window)
+		let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, from: view.window)
+		let originDelta = keyboardViewEndFrame.origin.y - keyboardViewBeginFrame.origin.y
+
+		// The text view should be adjusted, update the constant for this constraint.
+		textViewBottomLayoutGuideConstraint.constant -= originDelta
+
+		// Inform the view that its autolayout constraints have changed and the layout should be updated.
+		view.setNeedsUpdateConstraints()
+
+		// Animate updating the view's layout by calling layoutIfNeeded inside a UIView animation block.
+		let animationOptions: UIViewAnimationOptions = [animationCurve, .beginFromCurrentState]
+		UIView.animate(withDuration: animationDuration, delay: 0, options: animationOptions, animations: {
+			self.view.layoutIfNeeded()
+		}, completion: nil)
+
+		// Scroll to the selected text once the keyboard frame changes.
+		let selectedRange = commentView.selectedRange
+		commentView.scrollRangeToVisible(selectedRange)
+	}
+
 	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 		nameTextField.resignFirstResponder()
 		return true
@@ -65,6 +131,15 @@ class ViewController: UIViewController,
 
 	func textFieldDidBeginEditing(_ textField: UITextField) {
 		saveButton.isEnabled = false
+	}
+
+	func textViewDidEndEditing(_ textView: UITextView) {
+		activeField = nil
+	}
+
+	func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+		activeField = commentView
+		return true
 	}
 
 	func checkMealName() {
@@ -85,6 +160,7 @@ class ViewController: UIViewController,
 	}
 	@IBAction func selectImage(_ sender: UITapGestureRecognizer) {
 		nameTextField.resignFirstResponder()
+		commentView.resignFirstResponder()
 
 		let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
 

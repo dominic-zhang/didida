@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ajf-hE-l88">
-                                <rect key="frame" x="16" y="72" width="343" height="558"/>
+                                <rect key="frame" x="16" y="72" width="343" height="418"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8u5-V1-Wsl">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -105,28 +105,29 @@
                                         <rect key="frame" x="51.5" y="374" width="240" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ccc-2N-PjB">
-                                        <rect key="frame" x="0.0" y="430" width="343" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="ccc-2N-PjB" secondAttribute="bottom" id="K5a-ti-bcV"/>
-                                    <constraint firstItem="ccc-2N-PjB" firstAttribute="leading" secondItem="ajf-hE-l88" secondAttribute="leading" id="eVk-3f-2Ra"/>
-                                    <constraint firstItem="ccc-2N-PjB" firstAttribute="top" secondItem="gUD-Nh-4tW" secondAttribute="bottom" constant="12" id="kR1-j1-4cG"/>
-                                    <constraint firstAttribute="trailing" secondItem="ccc-2N-PjB" secondAttribute="trailing" id="l0z-RW-dyB"/>
                                     <constraint firstAttribute="trailing" secondItem="8u5-V1-Wsl" secondAttribute="trailing" id="oOT-Hk-jS4"/>
                                     <constraint firstItem="8u5-V1-Wsl" firstAttribute="leading" secondItem="ajf-hE-l88" secondAttribute="leading" id="oee-jy-NWO"/>
                                 </constraints>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ccc-2N-PjB">
+                                <rect key="frame" x="16" y="532" width="343" height="135"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="yH0-s5-uA7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ccc-2N-PjB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ELO-3G-8FB"/>
                             <constraint firstItem="ajf-hE-l88" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="KwA-Ho-JDf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ccc-2N-PjB" secondAttribute="bottom" id="Nff-PJ-oFv"/>
+                            <constraint firstItem="ccc-2N-PjB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TDh-rS-3iT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ajf-hE-l88" secondAttribute="trailing" id="jc7-jk-LeP"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ajf-hE-l88" secondAttribute="bottom" constant="37" id="mGm-XP-3nN"/>
                             <constraint firstItem="ajf-hE-l88" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mNd-jr-CP7"/>
                         </constraints>
                     </view>
@@ -148,6 +149,7 @@
                         <outlet property="photoImageView" destination="G5g-MJ-bXp" id="YE1-SL-9nH"/>
                         <outlet property="ratingControl" destination="gUD-Nh-4tW" id="OG6-ea-uvc"/>
                         <outlet property="saveButton" destination="Ktd-IY-Haf" id="pOK-Oo-gqT"/>
+                        <outlet property="textViewBottomLayoutGuideConstraint" destination="Nff-PJ-oFv" id="0nz-hO-gct"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

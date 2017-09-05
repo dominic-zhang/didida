@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E01443171F5D70FF00780765 /* LongestPalindromeSubString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E01443151F5D70FF00780765 /* LongestPalindromeSubString.cpp */; };
+		E05B99A21F5ECB7300D70414 /* Zigzag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E05B99A01F5ECB7300D70414 /* Zigzag.cpp */; };
 		E07593961F3C31FA00F317AD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E07593951F3C31FA00F317AD /* main.cpp */; };
 		E07593A41F3F20EC00F317AD /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E07593A31F3F20EC00F317AD /* gtest.framework */; };
 		E07593A81F3F22FA00F317AD /* TwoSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E07593A61F3F22FA00F317AD /* TwoSum.cpp */; };
@@ -28,6 +30,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E01443151F5D70FF00780765 /* LongestPalindromeSubString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LongestPalindromeSubString.cpp; sourceTree = "<group>"; };
+		E01443161F5D70FF00780765 /* LongestPalindromeSubString.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LongestPalindromeSubString.hpp; sourceTree = "<group>"; };
+		E05B99A01F5ECB7300D70414 /* Zigzag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Zigzag.cpp; sourceTree = "<group>"; };
+		E05B99A11F5ECB7300D70414 /* Zigzag.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Zigzag.hpp; sourceTree = "<group>"; };
 		E07593921F3C31FA00F317AD /* CodingPractise */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingPractise; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07593951F3C31FA00F317AD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E07593A31F3F20EC00F317AD /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = ../../../../../Library/Frameworks/gtest.framework; sourceTree = "<group>"; };
@@ -98,6 +104,10 @@
 				E07593AD1F3F308200F317AD /* LongestSubStringWithoutRepeating.hpp */,
 				E07593AF1F3F35CC00F317AD /* MedianOfTwoSortedArrays.cpp */,
 				E07593B01F3F35CC00F317AD /* MedianOfTwoSortedArrays.hpp */,
+				E01443151F5D70FF00780765 /* LongestPalindromeSubString.cpp */,
+				E01443161F5D70FF00780765 /* LongestPalindromeSubString.hpp */,
+				E05B99A01F5ECB7300D70414 /* Zigzag.cpp */,
+				E05B99A11F5ECB7300D70414 /* Zigzag.hpp */,
 			);
 			name = Algorithms;
 			sourceTree = "<group>";
@@ -162,6 +172,8 @@
 				E07593AB1F3F295400F317AD /* AddTwoNumbers.cpp in Sources */,
 				E07593AE1F3F308200F317AD /* LongestSubStringWithoutRepeating.cpp in Sources */,
 				E07593A81F3F22FA00F317AD /* TwoSum.cpp in Sources */,
+				E01443171F5D70FF00780765 /* LongestPalindromeSubString.cpp in Sources */,
+				E05B99A21F5ECB7300D70414 /* Zigzag.cpp in Sources */,
 				E07593961F3C31FA00F317AD /* main.cpp in Sources */,
 				E07593B11F3F35CC00F317AD /* MedianOfTwoSortedArrays.cpp in Sources */,
 			);

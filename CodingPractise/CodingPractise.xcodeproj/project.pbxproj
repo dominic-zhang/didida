@@ -15,6 +15,7 @@
 		E07593AB1F3F295400F317AD /* AddTwoNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E07593A91F3F295400F317AD /* AddTwoNumbers.cpp */; };
 		E07593AE1F3F308200F317AD /* LongestSubStringWithoutRepeating.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E07593AC1F3F308200F317AD /* LongestSubStringWithoutRepeating.cpp */; };
 		E07593B11F3F35CC00F317AD /* MedianOfTwoSortedArrays.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E07593AF1F3F35CC00F317AD /* MedianOfTwoSortedArrays.cpp */; };
+		E0C865F21F602409004E2451 /* ReverseInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0C865F01F602409004E2451 /* ReverseInt.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,8 @@
 		E07593AD1F3F308200F317AD /* LongestSubStringWithoutRepeating.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LongestSubStringWithoutRepeating.hpp; sourceTree = "<group>"; };
 		E07593AF1F3F35CC00F317AD /* MedianOfTwoSortedArrays.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MedianOfTwoSortedArrays.cpp; sourceTree = "<group>"; };
 		E07593B01F3F35CC00F317AD /* MedianOfTwoSortedArrays.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MedianOfTwoSortedArrays.hpp; sourceTree = "<group>"; };
+		E0C865F01F602409004E2451 /* ReverseInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReverseInt.cpp; sourceTree = "<group>"; };
+		E0C865F11F602409004E2451 /* ReverseInt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ReverseInt.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				E01443161F5D70FF00780765 /* LongestPalindromeSubString.hpp */,
 				E05B99A01F5ECB7300D70414 /* Zigzag.cpp */,
 				E05B99A11F5ECB7300D70414 /* Zigzag.hpp */,
+				E0C865F01F602409004E2451 /* ReverseInt.cpp */,
+				E0C865F11F602409004E2451 /* ReverseInt.hpp */,
 			);
 			name = Algorithms;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				E01443171F5D70FF00780765 /* LongestPalindromeSubString.cpp in Sources */,
 				E05B99A21F5ECB7300D70414 /* Zigzag.cpp in Sources */,
 				E07593961F3C31FA00F317AD /* main.cpp in Sources */,
+				E0C865F21F602409004E2451 /* ReverseInt.cpp in Sources */,
 				E07593B11F3F35CC00F317AD /* MedianOfTwoSortedArrays.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

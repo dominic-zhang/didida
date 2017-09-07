@@ -16,6 +16,7 @@
 		E07593AE1F3F308200F317AD /* LongestSubStringWithoutRepeating.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E07593AC1F3F308200F317AD /* LongestSubStringWithoutRepeating.cpp */; };
 		E07593B11F3F35CC00F317AD /* MedianOfTwoSortedArrays.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E07593AF1F3F35CC00F317AD /* MedianOfTwoSortedArrays.cpp */; };
 		E0C865F21F602409004E2451 /* ReverseInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0C865F01F602409004E2451 /* ReverseInt.cpp */; };
+		E0C865F51F616692004E2451 /* StringToInteger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0C865F31F616692004E2451 /* StringToInteger.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +49,8 @@
 		E07593B01F3F35CC00F317AD /* MedianOfTwoSortedArrays.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MedianOfTwoSortedArrays.hpp; sourceTree = "<group>"; };
 		E0C865F01F602409004E2451 /* ReverseInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReverseInt.cpp; sourceTree = "<group>"; };
 		E0C865F11F602409004E2451 /* ReverseInt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ReverseInt.hpp; sourceTree = "<group>"; };
+		E0C865F31F616692004E2451 /* StringToInteger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringToInteger.cpp; sourceTree = "<group>"; };
+		E0C865F41F616692004E2451 /* StringToInteger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StringToInteger.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				E05B99A11F5ECB7300D70414 /* Zigzag.hpp */,
 				E0C865F01F602409004E2451 /* ReverseInt.cpp */,
 				E0C865F11F602409004E2451 /* ReverseInt.hpp */,
+				E0C865F31F616692004E2451 /* StringToInteger.cpp */,
+				E0C865F41F616692004E2451 /* StringToInteger.hpp */,
 			);
 			name = Algorithms;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C865F51F616692004E2451 /* StringToInteger.cpp in Sources */,
 				E07593AB1F3F295400F317AD /* AddTwoNumbers.cpp in Sources */,
 				E07593AE1F3F308200F317AD /* LongestSubStringWithoutRepeating.cpp in Sources */,
 				E07593A81F3F22FA00F317AD /* TwoSum.cpp in Sources */,

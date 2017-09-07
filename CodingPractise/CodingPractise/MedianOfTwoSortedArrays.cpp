@@ -50,13 +50,13 @@ double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2)
 	{
 		j = (m + n + 1) / 2 - i;
 
-		if (nums1[j-1] > nums2[i])
+		if (j > 1 && nums1[j-1] > nums2[i])
 		{
 			iLowerBound = i;
 			i = (i + iUpperBound) / 2;
 			continue;
 		}
-		else if (nums2[i - 1] > nums1[j])
+		else if (i > 1 && nums2[i - 1] > nums1[j])
 		{
 			iUpperBound = i;
 			i = (i + iLowerBound) / 2;

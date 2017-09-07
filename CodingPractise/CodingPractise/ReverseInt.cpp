@@ -28,21 +28,16 @@ int reverse(int x) {
 		return 0;
 	int fabX = fabs(x);
 	int sign = x / fabX;
-	stack<int> numbers;
-	while (fabX > 0) {
-		int remainder = fabX % 10;
-		fabX /= 10;
-		numbers.push(remainder);
-	}
 
 	int result = 0;
-	int i = 0;
-	while (!numbers.empty()) {
-		result += numbers.top() * pow(10, i++);
+	while (fabX > 0)
+	{
+		result = result * 10 + fabX % 10;
 		if (result < 0)
 			return 0;
-		numbers.pop();
+		fabX /= 10;
 	}
+
 	return result * sign;
 }
 
@@ -61,12 +56,12 @@ TEST(ReverseIntTest, negativeOverflow)
 	EXPECT_EQ(0, reverse(-2147483647));
 }
 
-TEST(ReversetIntTest, reversePositiveInt)
+TEST(ReverseIntTest, reversePositiveInt)
 {
 	EXPECT_EQ(123, reverse(321));
 }
 
-TEST(ReverseIntTest, reversetNegativeInt)
+TEST(ReverseIntTest, reverseNegativeInt)
 {
 	EXPECT_EQ(-123, reverse(-321));
 }
